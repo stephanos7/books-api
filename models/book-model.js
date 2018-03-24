@@ -13,13 +13,15 @@ const bookSchema = new mongoose.Schema({
     required: [true, "The secondary title is required."]
   },
   authorName : {
-    type: String
+    type: String,
+    required: [true, "The author is required."]
   },
   coverImage: {
     type: String, defualt: ""
   },
   summary: {
-    type: String, default: "No summary has been provided for this publication"
+    type: String,
+    required: [true, "The summary is required."]
   }
 });
 
