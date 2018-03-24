@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const router = express.Router();
 
 // require book model
@@ -37,6 +38,18 @@ router.post("/books", (req, res, next) => {
 });
 
 // get single book
+router.get("/books/:id", (req, res, next) => {
+  if(!mongoose.Types.ObjectId.isValid(req.params.id)){
+    res.status(400).json({message: "not valid"});
+    return;
+  }
+  Book.findById(req.params.id, (err, theBook) => {
+    if(err){
+      res.json(err);
+    }
+    res.json(theBook);
+  })
+})
 
 // edit existing book
 
