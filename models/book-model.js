@@ -19,7 +19,9 @@ const bookSchema = new mongoose.Schema({
   coverImage: {
     type: String, defualt: ""
   },
-  summary: String, default: "No book summary has been provided for this publication"
+  summary: {
+    type: String, default: "No summary has been provided for this publication"
+  }
 });
 
 // use this schema to create a new (mongoose) book model;
