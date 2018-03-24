@@ -13,8 +13,7 @@ const bookSchema = new mongoose.Schema({
     required: [true, "The secondary title is required"]
   },
   authorName : {
-    type: String, default:"Anonymous",
-    required: [true, "The author is required"]
+    type: String
   },
   coverImage: {
     type: String, defualt: ""

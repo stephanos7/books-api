@@ -31,9 +31,9 @@ router.post("/books", (req, res, next) => {
       return;
     }
     // return a json message upon successfully saving the book in the db
-    res.json({message:`The new book,${newBook.mainTitle} has been saved in the database`});
-  })
-})
+    res.json({message: "successfully saved!"});
+  });
+});
 
 // get single book
 
