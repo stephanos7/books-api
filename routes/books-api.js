@@ -25,7 +25,7 @@ router.post("/books", (req, res, next) => {
   })
   
   // save the book in the db with mongoose's .save method
-  Book.save((err, newBook) => {
+  newBook.save((err) => {
     if(err){
       res.json(err);
       return;
