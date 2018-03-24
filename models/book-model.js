@@ -10,7 +10,7 @@ const bookSchema = new mongoose.Schema({
   },
   secondaryTitle : {
     type: String,
-    required: [true, "The secondary title is required"]
+    required: [true, "The secondary title is required."]
   },
   authorName : {
     type: String

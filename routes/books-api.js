@@ -21,7 +21,8 @@ router.post("/books", (req, res, next) => {
   const newBook = new Book({
     mainTitle: req.body.mainTitle,
     secondaryTitle: req.body.secondaryTitle,
-    authorName: req.body.authorName 
+    authorName: req.body.authorName,
+    summary: req.body.description
   })
   
   // save the book in the db with mongoose's .save method
