@@ -17,7 +17,7 @@ const bookSchema = new mongoose.Schema({
     required: [true, "The author is required."]
   },
   coverImage: {
-    type: String, defualt: ""
+    type: String, defualt: "https://brettwilliamillustration.files.wordpress.com/2013/04/thejunglebook.jpg"
   },
   summary: {
     type: String,
