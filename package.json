@@ -16,7 +16,7 @@
     "express": "^4.16.3",
     "mongoose": "^5.2.12",
     "nodemon": "^1.17.2",
-    "snyk": "^1.118.2"
+    "snyk": "^1.316.2"
   },
   "snyk": true
 }
