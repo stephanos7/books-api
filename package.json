@@ -12,10 +12,10 @@
   "author": "Stephanos Theodotou",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
+    "body-parser": "^1.20.4",
+    "express": "^4.22.0",
     "mongoose": "^6.4.6",
-    "nodemon": "^1.17.2",
+    "nodemon": "^2.0.0",
     "snyk": "^1.118.2"
   },
   "snyk": true
